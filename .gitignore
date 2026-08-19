@@ -1,0 +1,21 @@
+# Executaveis e objetos gerados pela compilacao
+bin/
+obj/
+build/
+dist/
+*.o
+*.exe
+*.out
+*.zip
+
+# Arquivos de estado/cache do Code::Blocks (especificos da maquina de quem compilou)
+*.depend
+*.layout
+
+# Arquivos temporarios do Windows
+Thumbs.db
+desktop.ini
+
+# Arquivos temporarios de editores
+*~
+*.swp

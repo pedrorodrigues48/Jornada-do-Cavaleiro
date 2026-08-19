@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "options": {
+        "shell": {
+            "executable": "C:\\msys64\\usr\\bin\\bash.exe",
+            "args": ["-lc"]
+        }
+    },
+    "tasks": [
+        {
+            "label": "Compilar (gcc + Allegro5)",
+            "type": "shell",
+            "command": "export PATH=/mingw64/bin:$PATH; mkdir -p build && gcc -g -Wall -Wextra -Iinclude $(pkg-config --cflags allegro-5 allegro_image-5 allegro_font-5 allegro_ttf-5 allegro_audio-5 allegro_acodec-5 allegro_primitives-5 allegro_dialog-5) src/main.c src/cavaleiro.c src/inimigo.c src/jogo.c src/recursos.c -o build/JornadaDoCavaleiro.exe $(pkg-config --libs allegro_main-5 allegro-5 allegro_image-5 allegro_font-5 allegro_ttf-5 allegro_audio-5 allegro_acodec-5 allegro_primitives-5 allegro_dialog-5)",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Rodar",
+            "type": "shell",
+            "command": "./build/JornadaDoCavaleiro.exe",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "env": {
+                    "PATH": "/mingw64/bin:${env:PATH}"
+                }
+            },
+            "dependsOn": "Compilar (gcc + Allegro5)",
+            "dependsOrder": "sequence",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+}
