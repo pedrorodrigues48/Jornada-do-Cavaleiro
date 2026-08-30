@@ -1,6 +1,6 @@
 # Jornada do Cavaleiro
 
-![Build](https://github.com/pedrorodrigues48/jornada-do-cavaleiro-v2/actions/workflows/build.yml/badge.svg)
+![Build](https://github.com/pedrorodrigues48/Jornada-do-Cavaleiro/actions/workflows/build.yml/badge.svg)
 ![Linguagem](https://img.shields.io/badge/linguagem-C-blue)
 ![Biblioteca](https://img.shields.io/badge/biblioteca-Allegro%205-orange)
 ![Licença](https://img.shields.io/badge/licença-MIT-green)
@@ -13,16 +13,10 @@ defesa e um sistema de esquiva/parry inspirado em jogos de ação como *Dark Sou
 Trabalho final da disciplina de **Algoritmos e Programação** (1º semestre de 2025), do curso
 de **Engenharia de Computação** da **Universidade Federal de Santa Maria (UFSM)**.
 
-> Esta é a versão aprimorada do projeto original entregue na disciplina — mesmo jogo e
-> mesmo código-fonte, agora com build automatizado via CI (veja o badge acima, que compila
-> o projeto com `-Wall -Wextra -Werror` a cada push) e documentação revisada. O repositório
-> da entrega original está em
-> [pedrorodrigues48/Jornada-do-Cavaleiro](https://github.com/pedrorodrigues48/Jornada-do-Cavaleiro).
-
 ### ▶️ Jogar sem compilar
 
 Baixe o executável pronto para Windows (64 bits) na página de
-[**Releases**](https://github.com/pedrorodrigues48/jornada-do-cavaleiro-v2/releases/latest),
+[**Releases**](https://github.com/pedrorodrigues48/Jornada-do-Cavaleiro/releases/latest),
 extraia o `.zip` e rode `JornadaDoCavaleiro.exe` — não precisa instalar Code::Blocks, Allegro
 nem nada. Para compilar a partir do código-fonte, veja [Como executar](#como-executar).
 
